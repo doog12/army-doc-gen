@@ -4,7 +4,10 @@ import aiohttp
 from aiogram import Bot
 from aiogram.types import BufferedInputFile
 
-async def download_and_send_file(bot: Bot, docx_url: str, subtype_name: str, chat_id: int, callback_function):
+
+async def download_and_send_file(
+    bot: Bot, docx_url: str, subtype_name: str, chat_id: int, callback_function
+):
     status_msg = await bot.send_message(chat_id=chat_id, text="📥 Завантаження файлу...")
 
     try:
@@ -17,13 +20,19 @@ async def download_and_send_file(bot: Bot, docx_url: str, subtype_name: str, cha
 
                     # Wrap the BytesIO object in an InputFile
                     input_file = BufferedInputFile(file_bytes, filename=file_name)
-                    
+
                     await bot.send_document(chat_id=chat_id, document=input_file)
                     await bot.delete_message(chat_id=chat_id, message_id=status_msg.message_id)
                     await bot.send_message(chat_id=chat_id, text="✅ Файл успішно завантажено")
-                    await bot.send_message(chat_id=chat_id, text="📁 Оберіть тип документа (крок 1 з 3):", reply_markup=callback_function())
+                    await bot.send_message(
+                        chat_id=chat_id,
+                        text="📁 Оберіть тип документа (крок 1 з 3):",
+                        reply_markup=callback_function(),
+                    )
                 else:
-                    await bot.send_message(chat_id=chat_id, text="❌ Помилка при завантаженні DOCX.")
+                    await bot.send_message(
+                        chat_id=chat_id, text="❌ Помилка при завантаженні DOCX."
+                    )
     except asyncio.TimeoutError:
         await bot.send_message(chat_id=chat_id, text="⏱️ Тайм-аут при завантаженні файлу.")
     except Exception as e:
