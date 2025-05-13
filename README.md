@@ -18,6 +18,12 @@
   <a href="https://github.com/psf/black">
     <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
   </a>
+  <a href="https://github.com/pycqa/isort">
+    <img alt="Import sorter: isort" src="https://img.shields.io/badge/imports-isort-ef8336.svg">
+  </a>
+  <a href="https://pre-commit.com/">
+    <img alt="pre-commit enabled" src="https://img.shields.io/badge/pre--commit-enabled-brightgreen.svg">
+  </a>
 </p>
 
 ---
@@ -125,6 +131,15 @@ python main.py
 
 ---
 
+## 🧼 Форматування коду
+
+Цей проєкт використовує [`pre-commit`](https://pre-commit.com/) для автоматичного форматування коду перед кожним комітом. Під капотом використовуються:
+
+- [`black`](https://github.com/psf/black) — автоматичне форматування Python-коду
+- [`isort`](https://pycqa.github.io/isort/) — сортування імпортів
+
+---
+
 ## 📝 Приклад використання
 
 1. Користувач запускає бота командою `/start`  
@@ -144,7 +159,7 @@ python main.py
 
 ---
 
-## 📌 TODO (можна реалізувати пізніше)
+## 📌 TODO
 
 - Реалізація ролей (admin/user)  
 - База користувачів з ролями
