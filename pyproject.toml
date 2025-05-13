@@ -1,7 +1,8 @@
+# Black Configuration
 [tool.black]
-line-length = 100            # длина строки (по умолчанию 88, часто ставят 100 или 120)
-target-version = ["py313"]   # версия Python проекта (можно указать нужную)
-skip-string-normalization = true  # не менять кавычки ' -> "
+line-length = 100
+target-version = ["py313"] # Python Version
+skip-string-normalization = true  # do not change quotes ' -> "
 exclude = '''
 /(
     \.git
@@ -19,3 +20,11 @@ exclude = '''
   | requirements.txt
 )/
 '''
+
+# Isort Configuration
+[tool.isort]
+profile = "black" # Use black profile
+line_length = 100 # Same as black
+known_third_party = ["aiogram", "aiohttp", "python_dotenv"] # Third Party Libraries
+known_first_party = ["army-doc-gen"]  # Project Folder
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]  # Normal order of imports
