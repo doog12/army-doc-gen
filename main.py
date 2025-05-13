@@ -1,12 +1,13 @@
+import asyncio
+import logging
+import os
+
 from aiogram import Bot, Dispatcher
+from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import BotCommand
-from aiogram.client.default import DefaultBotProperties
-import asyncio
-import os
 from dotenv import load_dotenv
-import logging
 
 from handlers import auth, callbacks, faq, help
 

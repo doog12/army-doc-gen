@@ -1,12 +1,13 @@
-from aiogram import Router, F
-from aiogram.types import Message
+import os
+
+from aiogram import F, Router
+from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from aiogram.filters import CommandStart
+from aiogram.types import Message
+from dotenv import load_dotenv
 
 from keyboards.inline import get_main_type_keyboard
-import os
-from dotenv import load_dotenv
 
 router = Router()
 

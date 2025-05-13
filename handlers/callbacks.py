@@ -1,16 +1,14 @@
 from aiogram import Router
-from aiogram.types import CallbackQuery
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
+from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import DOCUMENTS
-from keyboards.inline import get_main_type_keyboard
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from modules.downloadFile import download_and_send_file
 from configs.faqText import faq_text
 from configs.helpText import help_text
 from handlers.auth import AuthForm
+from keyboards.inline import get_main_type_keyboard
+from modules.downloadFile import download_and_send_file
 
 router = Router()
 

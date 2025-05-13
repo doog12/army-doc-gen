@@ -1,7 +1,6 @@
 from aiogram import Router
-from aiogram.types import Message
 from aiogram.filters import Command
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 from configs.helpText import help_text
 
