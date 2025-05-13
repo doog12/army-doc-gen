@@ -13,3 +13,6 @@ max_line_length = 100
 
 [*.toml]
 indent_size = 2
+
+[*.md]
+indent_size = 2
