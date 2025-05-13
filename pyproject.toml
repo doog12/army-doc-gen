@@ -1,0 +1,21 @@
+[tool.black]
+line-length = 100            # длина строки (по умолчанию 88, часто ставят 100 или 120)
+target-version = ["py313"]   # версия Python проекта (можно указать нужную)
+skip-string-normalization = true  # не менять кавычки ' -> "
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | env
+  | build
+  | dist
+  | migrations
+  | __pycache__
+  | \.env
+  | \.editorconfig
+  | \.idea
+  | \.vscode
+  | \.pytest_cache
+  | requirements.txt
+)/
+'''
