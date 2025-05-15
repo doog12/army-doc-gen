@@ -6,25 +6,25 @@
 📥 Користувач може вибрати тип документа, отримувача та підтип, після чого завантажити шаблон у форматі DOCX.
 
 <p align="center">
-  <a href="https://www.python.org">
+  <a href="https://www.python.org" style="text-decoration: none">
     <img src="https://img.shields.io/badge/Python-3.13.3-3776AB.svg?style=flat&logo=python&logoColor=white" alt="python">
   </a>
-  <a href="https://github.com/doog12/army-doc-gen">
+  <a href="https://github.com/doog12/army-doc-gen" style="text-decoration: none">
     <img src="https://img.shields.io/badge/status-active-brightgreen" alt="Project Status">
   </a>
-  <a href="./LICENSE">
+  <a href="./LICENSE" style="text-decoration: none">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License">
   </a>
-  <a href="https://github.com/psf/black">
+  <a href="https://github.com/psf/black" style="text-decoration: none">
     <img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg">
   </a>
-  <a href="https://github.com/pycqa/isort">
+  <a href="https://github.com/pycqa/isort" style="text-decoration: none">
     <img alt="Import sorter: isort" src="https://img.shields.io/badge/imports-isort-ef8336.svg">
   </a>
-  <a href="https://pre-commit.com/">
+  <a href="https://pre-commit.com/" style="text-decoration: none">
     <img alt="pre-commit enabled" src="https://img.shields.io/badge/pre--commit-enabled-brightgreen.svg">
   </a>
-  <a href="https://github.com/doog12/army-doc-gen/actions/workflows/pre-commit.yaml">
+  <a href="https://github.com/doog12/army-doc-gen/actions/workflows/pre-commit.yaml" style="text-decoration: none">
     <img alt="🧹 Actions" src="https://github.com/doog12/army-doc-gen/actions/workflows/pre-commit.yaml/badge.svg">
   </a>
 </p>
