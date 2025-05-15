@@ -174,7 +174,7 @@ async def handle_callback(query: CallbackQuery, state: FSMContext):
                     ),
                     InlineKeyboardButton(text="👁️ Переглянути", url=pdf_url),
                 ],
-                [InlineKeyboardButton(text="🔙 Назад", callback_data=f"back_to_authority")],
+                [InlineKeyboardButton(text="🔙 Назад", callback_data=f"civil_statement:заява")],
             ]
         )
 
